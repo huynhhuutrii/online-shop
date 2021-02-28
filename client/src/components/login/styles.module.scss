@@ -1,0 +1,104 @@
+.containerLogin {
+  width: 50%;
+  height: 420px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  margin-top: 110px;
+  .title {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    div {
+      color: #31b6e8;
+      font-size: 23px;
+    }
+    img {
+      width: 150px;
+      height: 30px;
+      color: #0f6e91;
+      margin-left: 5px;
+      margin-top: 7px;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    .group {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      span {
+        color: #31b6e8;
+        position: absolute;
+        left: 25px;
+        font-size: 14px;
+        top: -2px;
+        background-color: white;
+      }
+      input {
+        padding: 12px 27px;
+        margin: 10px 0px;
+        outline: none;
+        border-radius: 4px;
+        border: 1px solid #eee;
+        color: rgb(95, 93, 93);
+      }
+      input::placeholder {
+        font-size: 12px;
+      }
+    }
+    .forgetPass {
+      font-size: 16px;
+      color: #00315c;
+      cursor: pointer;
+      &:hover {
+        color: #4b779e;
+      }
+    }
+    button:first-of-type {
+      margin: 10px 0px 20px 0px;
+      padding: 10px;
+      font-size: 15px;
+      background-color: #31b6e8;
+      color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    .loginFace {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      border-top: 2px solid rgb(179, 174, 174);
+      position: relative;
+      justify-content: space-evenly;
+      padding-top: 8px;
+      span {
+        position: absolute;
+        left: 230px;
+        top: -13px;
+        background-color: white;
+        margin-bottom: 10px;
+        padding: 0px 3px;
+      }
+      button {
+        position: relative;
+        background-color: #365899;
+        padding: 14px;
+        svg {
+          width: 25px;
+          height: 25px;
+          position: absolute;
+          left: 110px;
+          top: 9px;
+        }
+      }
+    }
+  }
+}

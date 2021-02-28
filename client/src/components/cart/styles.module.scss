@@ -1,0 +1,139 @@
+.container {
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  .cart {
+    width: 72%;
+    background-color: white;
+    padding: 20px;
+    .title {
+      display: flex;
+      margin-bottom: 10px;
+      align-items: center;
+      div {
+        font-size: 15px;
+      }
+      div:first-of-type {
+        font-size: 20px;
+        color: #00315c;
+        margin-right: 5px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+  .productGroup {
+    display: flex;
+    align-items: center;
+    svg {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .cartItemPicture {
+      width: 50px;
+      height: 50px;
+      margin: 0px 20px 0px 10px;
+    }
+  }
+  .detail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    height: 200px;
+    div {
+      color: #00315c;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .inputGroup {
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      justify-content: space-between;
+      input,
+      button {
+        height: 33px;
+      }
+      ::-webkit-input-placeholder {
+        font-size: 15px;
+      }
+      input {
+        width: 65%;
+        padding: 5px;
+        outline: none;
+        border-radius: 3px;
+        border: 1px solid gray;
+      }
+      button {
+        width: 33%;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+        background-color: #5cc9f1;
+        color: white;
+        font-size: 16px;
+
+        &:hover {
+          background-color: #318aaa;
+        }
+      }
+    }
+    .total {
+      font-size: 13px;
+      color: black;
+      margin-bottom: 25px;
+      span {
+        font-size: 20px;
+        margin-left: 5px;
+      }
+    }
+    .button {
+      border-radius: 3px;
+      background-color: #d32f2f;
+      color: white;
+      font-size: 15px;
+      padding: 5px;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      &:hover {
+        background-color: #f44336;
+      }
+    }
+  }
+}
+.empty {
+  display: flex;
+  flex-direction: column;
+  img {
+    margin: 0px auto;
+    margin-top: 50px;
+  }
+  div {
+    margin: 10px auto;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  a {
+    width: 20%;
+    margin: 0px auto;
+    background-color: #31b6e8;
+    outline: none;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 3px;
+    color: white;
+    &:hover {
+      text-decoration: none;
+      color: white;
+      background-color: #0069d9;
+    }
+  }
+}

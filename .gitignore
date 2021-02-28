@@ -1,0 +1,6 @@
+client/node_modules
+client/yarn-error.log
+client/yarn.lock
+manager-backend/node_modules
+manager-backend/yarn.lock
+manager-frontend/node_modules

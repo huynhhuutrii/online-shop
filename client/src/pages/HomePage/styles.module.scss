@@ -1,0 +1,87 @@
+.banner {
+  display: flex;
+  width: 80%;
+  height: 295px;
+  margin: 0px auto;
+  margin-top: 80px;
+  .list {
+    width: 20%;
+    background-color: white;
+    .listProduct {
+      background-color: #5cc9f1;
+      padding: 5px;
+      padding-left: 25px;
+      color: white;
+    }
+    .categories {
+      list-style: none;
+      margin-right: 0px;
+      padding-inline-start: 0px;
+      position: relative;
+      li {
+        margin-top: 3px;
+        &:hover {
+          .catChildren {
+            display: block;
+          }
+        }
+      }
+      .category {
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        height: 40px;
+        color: gray;
+        position: relative;
+        img {
+          width: 25px;
+          height: 27px;
+          margin-right: 10px;
+          fill: gray !important;
+        }
+      }
+      .catChildren {
+        width: 200px;
+        height: 295px;
+        padding-left: 30px;
+        z-index: 0.5;
+        background-color: white;
+        left: 196px;
+        top: -37px;
+        display: none;
+        position: absolute;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        a {
+          text-decoration: none;
+          color: gray;
+          &:hover {
+            color: #5cc9f1;
+          }
+        }
+        li {
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+  img {
+    width: 1000px;
+  }
+}
+
+.hovered {
+  background-color: #5cc9f1;
+  color: white !important;
+  &::after {
+    position: absolute;
+    z-index: 1;
+    right: -30px;
+    top: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 30px solid #5cc9f1;
+    border-bottom: 20px solid transparent;
+  }
+}

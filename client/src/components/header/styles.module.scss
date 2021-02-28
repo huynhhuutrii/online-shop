@@ -1,0 +1,172 @@
+.container {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #00315c;
+  .content {
+    margin: 0px auto;
+    width: 80%;
+    display: flex;
+    color: white;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+    .nameTitle {
+      width: 250px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  .title {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    img {
+      width: 200px;
+      cursor: pointer;
+    }
+    .groupSearch {
+      overflow: hidden;
+      box-sizing: border-box;
+      width: 430px;
+      height: 35px;
+      display: flex;
+      margin-left: 80px;
+      justify-content: space-between;
+      border: 2px solid #5cc9f1;
+      align-items: center;
+      border-radius: 4px;
+      input {
+        height: 100%;
+        border: none;
+        outline: none;
+        flex-grow: 1;
+        padding: 0px 10px;
+        font-size: 16px;
+      }
+      .labelSearch {
+        height: 100%;
+        background-color: #5cc9f1;
+        color: white;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      svg {
+        height: 100%;
+        padding: 0px 15px;
+        background-color: #f6f6f6;
+      }
+    }
+    .userGroup {
+      width: 180px;
+      display: flex;
+      margin-left: 80px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      .isLogged {
+        margin-right: 15px;
+        color: #205786;
+        font-style: italic;
+        font-weight: 500;
+        &:hover {
+          .dropdownUser {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+          }
+        }
+        span {
+          font-style: normal;
+          margin-left: 10px;
+        }
+        &:hover {
+          color: #5cc9f1;
+        }
+      }
+      .notLogin {
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+        a {
+          user-select: none;
+          text-decoration: none;
+          &:hover {
+            color: #205786;
+          }
+          cursor: pointer;
+        }
+        .navActive {
+          text-decoration: underline;
+          user-select: none;
+          &:hover {
+            color: #205786;
+          }
+          cursor: pointer;
+        }
+      }
+      .dropdownUser {
+        display: none;
+        position: absolute;
+        top: 20px;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        background-color: white;
+        font-style: normal;
+        color: black;
+        font-weight: 400;
+        div {
+          padding: 10px;
+          cursor: pointer;
+          &:hover {
+            color: white;
+            background-color: #5cc9f1;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+    .carts {
+      border: 2px solid #5cc9f1;
+      border-radius: 3px;
+      margin-left: 10px;
+      width: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 10px;
+      cursor: pointer;
+      div {
+        font-size: 14px;
+        margin-left: 7px;
+      }
+      .cartIcon {
+        sub {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          left: 5px;
+          top: -5px;
+          background-color: red;
+          height: 14px;
+          width: 14px;
+          color: white;
+
+          border-radius: 50%;
+          font-size: 10px;
+        }
+        position: relative;
+      }
+    }
+  }
+}

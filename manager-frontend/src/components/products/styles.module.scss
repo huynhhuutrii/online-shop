@@ -1,0 +1,107 @@
+.container {
+  padding-top: 20px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 718px;
+  margin: 0px auto;
+  .header {
+    .title {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #00315c;
+    }
+    .search {
+      display: flex;
+      border: 2px solid #5cc9f1;
+      width: 300px;
+      border-radius: 5px;
+      height: 35px;
+      justify-content: space-between;
+      input {
+        width: calc(100% - 80px);
+        border: none;
+        outline: none;
+        font-size: 15px;
+        padding: 0px 10px 0px 10px;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        background-color: #5cc9f1;
+        padding: 3px;
+        width: 80px;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.prop {
+  font-size: 15px;
+  font-weight: 500;
+}
+.picBox {
+  display: flex;
+
+  width: 100%;
+  height: 70px;
+  img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+}
+.titleModal {
+  background-color: #03a9f4;
+  border-radius: 3px 3px 0px 0px;
+  border: none;
+  color: white;
+  padding: 8px;
+  font-size: 18px;
+}
+.fileInput {
+  display: none;
+}
+.fileLabel {
+  padding: 5px;
+  background-color: #ffa000;
+  width: 130px;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    margin-right: 7px;
+    fill: white;
+  }
+}
+.imgList {
+  display: flex;
+  margin-top: 15px;
+  width: 100%;
+  .boxImg {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    svg {
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      cursor: pointer;
+      &:hover {
+        fill: gray;
+      }
+    }
+  }
+}

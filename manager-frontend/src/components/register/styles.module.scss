@@ -1,0 +1,124 @@
+.container {
+  width: 50%;
+  max-height: 650px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  margin-top: 110px;
+  padding: 20px;
+  background-color: white;
+  .title {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    div {
+      color: #31b6e8;
+      font-size: 24px;
+    }
+    img {
+      width: 140px;
+      height: 35px;
+      color: #0f6e91;
+      margin-left: 5px;
+      margin-top: 7px;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    .group {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      span {
+        color: #31b6e8;
+        position: absolute;
+        left: 25px;
+        font-size: 14px;
+        top: -2px;
+        background-color: white;
+      }
+      input {
+        padding: 10px 27px;
+        margin: 10px 0px;
+        outline: none;
+        border-radius: 4px;
+        border: 1px solid #eee;
+        color: rgb(95, 93, 93);
+      }
+      input::placeholder {
+        font-size: 12px;
+      }
+    }
+    .sexGroup {
+      margin: 10px 0px;
+      display: flex;
+      width: 45%;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      .radioGroup {
+        display: block;
+        align-items: center;
+
+        label {
+          color: rgb(139, 138, 138);
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+        input:checked {
+          background-color: #31b6e8;
+        }
+      }
+    }
+    .date {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+      select {
+        width: 90px;
+        height: 30px;
+        margin: 5px 0px;
+        border: 1px solid rgb(177, 175, 175);
+        outline: none;
+      }
+    }
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    user-select: none;
+    background-color: #31b6e8;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .policy {
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    span {
+      color: #31b6e8;
+      &:hover {
+        color: #0f6e91;
+      }
+      cursor: pointer;
+    }
+  }
+  .err {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+    height: 12px;
+  }
+}
