@@ -1,5 +1,16 @@
 import axios from '../../helpers';
 import * as actionTypes from '../constants';
+export const getStatisticalFromOrders = ()=>{
+  return async (dispatch)=>{
+    const res = await axios.get('/order/statistical');
+    if(res.status === 200){
+      dispatch({
+        type: actionTypes.GET_STATISTICAL,
+        payload: res.data.statistical
+      })
+    }
+  }
+}
 export const updateOrder = (idOrder) => {
   return async (dispatch) => {
     const res = await axios.put('/order/update', { idOrder });

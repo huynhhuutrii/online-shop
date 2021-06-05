@@ -16,8 +16,7 @@ export default function Admin(props) {
       <div className={styles.left}>
         <NavLink
           style={{ display: 'flex', alignItems: 'center' }}
-          activeClassName={styles.active}
-          to="/home"
+          to="/"
         >
           <BsFillGridFill />
           Home

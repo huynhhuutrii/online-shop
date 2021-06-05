@@ -72,16 +72,4 @@
 .hovered {
   background-color: #5cc9f1;
   color: white !important;
-  &::after {
-    position: absolute;
-    z-index: 1;
-    right: -30px;
-    top: 0;
-    content: '';
-    width: 0;
-    height: 0;
-    border-top: 20px solid transparent;
-    border-left: 30px solid #5cc9f1;
-    border-bottom: 20px solid transparent;
-  }
 }

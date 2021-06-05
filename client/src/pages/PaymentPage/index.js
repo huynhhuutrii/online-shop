@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './styles.module.scss';
 import Layout from '../../layout';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Button, Row, Modal } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { BsArrowLeftShort } from 'react-icons/bs';

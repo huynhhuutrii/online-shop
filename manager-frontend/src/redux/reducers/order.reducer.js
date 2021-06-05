@@ -2,6 +2,7 @@ import * as actionTypes from '../constants';
 
 const initialState = {
   orders: [],
+  statistical: []
 };
 const update = (orders, id) => {
   for (let order of orders) {
@@ -38,6 +39,11 @@ export default (state = initialState, action) => {
         ...state,
         orders: state.orders.filter((order) => order._id !== action.payload),
       };
+    case actionTypes.GET_STATISTICAL:
+      return{
+        ...state,
+        statistical: action.payload
+      }
     default:
       return state;
   }

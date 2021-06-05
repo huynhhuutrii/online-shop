@@ -25,15 +25,15 @@
   .listProduct {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 20px;
+   
     .product {
       background-color: white;
       width: 200px;
       height: 340px;
-      margin-bottom: 20px;
       box-sizing: border-box;
       text-decoration: none;
+      margin: 20px 13px; 
       img {
         width: 100%;
         height: 210px;
