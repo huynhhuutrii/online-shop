@@ -211,3 +211,30 @@ exports.order = (req, res) => {
     }
   });
 };
+//tính số lượng sản phẩm được bán ra
+//sản phẩm nào bán nhiều nhất
+exports.statistical = async (req, res) =>{
+  const products = [];
+  const orders = await Order.find()
+  for(let order of orders){
+    for(let product of order.cartItems){
+        products.push(product)
+    }
+  }
+  if(products.length>0){
+    const productReduce = products.reduce((acc,current)=>{
+      for(let item of acc){
+        if (item.name === current.name) {
+          item.quantity = current.quantity + item.quantity;
+          return acc
+        }
+      }
+      return [ ...acc,current]
+    },[]).sort((a,b) => b.quantity- a.quantity)
+    if(productReduce){
+      return res.status(200).json({
+        statistical: productReduce.slice(0,5)
+      })
+    }
+  }
+}

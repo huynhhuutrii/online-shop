@@ -28,6 +28,7 @@ exports.deleteProduct = (req, res) => {
 };
 exports.updateProduct = async (req, res) => {
   const { _id, name, price, quantity, description, category } = req.body;
+  console.log(req.body)
   var productImages = [];
   var slug = slugify(name);
   if (req.files && req.files.length > 0) {
